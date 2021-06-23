@@ -650,7 +650,7 @@ display: block;
    
 }
 .form-control{
-    width: 600px;
+    width: 400px;
      background: transparent;
     border: none;
     outline: none;
@@ -742,7 +742,7 @@ box-shadow: 0px 0px 10px 0 #d158d1d2;}
 .footer-container .links a:nth-child(4) img:hover{
 box-shadow: 0px 0px 10px 0 #58d180d2;}
 
-/* media query for tablet */
+                                             /* media query for tablet */
 
 @media  screen and (min-width: 768px) {
 
