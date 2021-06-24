@@ -658,7 +658,7 @@ display: block;
    
 }
 .form-control{
-    width: 600px;
+    width: 90vw;
      background: transparent;
     border: none;
     outline: none;
