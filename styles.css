@@ -474,6 +474,11 @@ a{
      font-weight: 500;
      margin-top: 10px;
 }
+#education .education-info h3{
+    font-weight: 500;
+    padding: 10px 0;
+}    
+
  #education .education-img {
      flex-basis: 50%;
      height: 250px;
