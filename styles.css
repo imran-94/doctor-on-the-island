@@ -931,6 +931,9 @@ box-shadow: 0px 0px 10px 0 #58d180d2;}
         display: none;
     }
   
+    .contact-form{
+    width: 600px ;
+}
 }
 
 
