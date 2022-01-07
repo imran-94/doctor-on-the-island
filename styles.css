@@ -227,8 +227,8 @@ a {
 
 #hero .hero h1 {
   display: flex;
-  text-align: center;
-  left: -45%;
+  text-align:center;
+  left: -35%;
   color: transparent;
   position: relative;
   animation: text-reveal 1.5s ease 0.5s forwards;
@@ -296,7 +296,7 @@ a {
 .p-button {
   display: inline-block;
   position: relative;
-  left: -45%;
+  left: -35%;
   color: #edbb5f;
   background-color: #1d3444;
   border: 2px solid #edbb5f;
@@ -304,7 +304,7 @@ a {
   text-align: center;
   letter-spacing: 0.1rem;
   margin-top: 30px;
-  padding: 15px;
+  padding: 15px 20px;
   transition: 0.7s ease;
   transition-property: background-color, color;
 }
@@ -322,14 +322,16 @@ a {
 }
 
 .hero-exit {
-   position: relative;
+  position: relative;
   content: "";
   min-height: 20vh;
   display: flex;
   flex-direction: column;
+  text-align: center;
   margin-top: 10vh;
   color: #6f7886;
-  box-shadow: 0px 0px 30px 0 rgba(0, 0, 0, 0.5);
+  box-shadow: 0px 0px 10px 0 #0000002c;
+
  
   }
 .hero-exit h2{
@@ -444,9 +446,11 @@ a {
   margin: 30px 0;
   line-height: 3rem;
   font-weight: 400;
-  letter-spacing: 0.05rem;
+  letter-spacing: 0.01rem;
+  word-spacing: 4px;
   max-width: 1000px;
   text-align: center;
+  padding: 0 10px;
 }
 
 #services .service-bottom {
@@ -888,6 +892,11 @@ a {
 
 /* contact-info */
 
+#contacts{
+  position: relative;
+  top:10vh;
+}
+
 #contacts .contact {
   flex-direction: column;
   display: flex;
@@ -924,7 +933,7 @@ a {
   z-index: -1;
 }
 #contacts .contacts {
-  width: 400px;
+  width: 320px;
 }
 
 .contact-item {
@@ -935,10 +944,11 @@ a {
   text-align: center;
   align-items: center;
   justify-content: center;
-  height: 200px;
+  height: 120px;
   padding: 30px;
-  border-radius: 15px;
-  box-shadow: 0px 0px 30px 0 rgba(0, 0, 0, 0.5);
+  border-radius: 0px;
+  box-shadow: 0px 0px 10px 0 #0000002c;c
+
   transition: 0.4s ease all;
 }
 .contact-item:before {
@@ -946,7 +956,7 @@ a {
   backdrop-filter: blur(10px) saturate(100%) contrast(45%) brightness(130%);
   content: "";
   height: 100%;
-  border-radius: 15px;
+  border-radius: 0px;
   position: absolute;
   width: 100%;
 }
@@ -960,7 +970,7 @@ a {
 }
 
 .contact-item:hover {
-  box-shadow: 0px 0px 10px 0 rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 0px 5px 0 rgba(0, 0, 0, 0.1);
 }
 
 @keyframes orbit {
@@ -1000,17 +1010,21 @@ a {
   margin: 100px 0;
 }
 .contact-form {
-  border-radius: 20px;
+  /* border-radius: 0px;
   box-shadow: 0px 5px 20px 0 #0000002c;
   background-color: rgba(255, 255, 255, 0.3);
-  backdrop-filter: blur(10px) saturate(100%) contrast(45%) brightness(130%);
-  width: 300px;
+  backdrop-filter: blur(10px) saturate(100%) contrast(45%) brightness(130%); */
+  width: 330px;
+  transition: all .8s;
 }
 .contact-form:hover {
   box-shadow: 0px 0px 10px 0 #0000002c;
+  background-color: rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(10px) saturate(100%) contrast(45%) brightness(130%)
 }
 
 .form-control {
+  
   width: 280px;
   background: transparent;
   border: none;
@@ -1028,12 +1042,13 @@ a {
 
 input {
   height: 45px;
-  border-radius: 15px;
+  border-radius: 5px;
   box-shadow: 0px 0px 10px 0 #0000002c;
+  
 }
 textarea {
-  height: 90px;
-  border-radius: 25px;
+  height: 100px;
+  border-radius: 5px;
   box-shadow: 0px 0px 10px 0 #0000002c;
 }
 
@@ -1062,21 +1077,38 @@ form .submit:hover {
 /* reach-out */
 
 .reach {
-  min-height: 10vh;
+  position: relative;
+  content: "";
+  min-height: 15vh;
   display: flex;
+  text-align: center;
+  margin-top: 10vh;
+  box-shadow: 0px 0px 10px 0 #0000002c;
   flex-direction: row;
   justify-content: space-evenly;
   flex-wrap: wrap;
 }
+.reach:before {
+  background-color: rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(10px) saturate(100%) contrast(45%) brightness(130%);
+  content: "";
+  height: 100%;
+  position: absolute;
+  width: 100%;
+  z-index: -1;
+}
 
 .reach a {
-  color: white;
-  background-color: #a6802b;
-  padding: 8px 10px;
-  width: 80px;
+  color: #edbb5f;
+  background-color: #1d3444;
+  border: 2px solid #edbb5f;
+  text-transform: uppercase;
+  padding: 10px 10px;
+  border-radius: 5px;
+  width: 90px;
   text-align: center;
   font-size: 1rem;
-  margin: 15px 10px;
+  margin: 0 ;
 }
 .reach a:hover {
   background-color: #1d3444;
@@ -1185,10 +1217,10 @@ form .submit:hover {
 #hero::after {
   content: "";
   position: absolute;
-  left: 45%;
-  top: 5%;
-  height: 80vh;
-  width: 450px;
+  left: 50%;
+  top: 0%;
+  height: 100%;
+  width:50%;
   background-color:#fff;
   opacity: 0.5;
   z-index: -1;
@@ -1272,17 +1304,18 @@ form .submit:hover {
   }
   .contacts .contact-item {
     margin: auto 10px;
-    min-width: 55%;
+    min-width: 65%;
+
   }
 
   .contact-form {
-    border-radius: 20px;
-    box-shadow: 0px 0px 30px 0 #0000002c;
+    border-radius: 0px;
+    /* box-shadow: 0px 0px 30px 0 #0000002c; */
     width: 700px;
   }
 
   .form-control {
-    width: 400px;
+    width: 500px;
   }
 
   /* end contact */
@@ -1294,6 +1327,7 @@ form .submit:hover {
 /* end   media query for tablet */
 
 /* media query for desktop */
+
 @media screen and (min-width: 1090px) {
   #services .service-item {
     flex-basis: 22%;
@@ -1328,10 +1362,10 @@ form .submit:hover {
 #hero::after {
   content: "";
   position: absolute;
-  left: 65%;
-  top: 5%;
-  height: 80vh;
-  width: 450px;
+  left: 50%;
+  top: 0%;
+  height: 100%;
+  width: 50%;
   background-color:#fff;
   opacity: 0.5;
   z-index: -1;
@@ -1339,13 +1373,13 @@ form .submit:hover {
   /* contact */
 
   .contact-form {
-    border-radius: 20px;
-    box-shadow: 0px 0px 30px 0 #0000002c;
-    width: 1200px;
+    border-radius: 0px;
+    /* box-shadow: 0px 0px 30px 0 #0000002c; */
+    width: 1000px;
   }
 
   .form-control {
-    width: 800px;
+    width: 600px;
   }
   /* about  */
   .about-footer {
@@ -1378,20 +1412,13 @@ form .submit:hover {
   }
   /* end of education */
 
- 
-  
-  #covid .measures-item h3 {
-    font-size: 15px;
-  }
-  /*  end of covid */
 
   /* reach-out */
 
   .reach a {
-    padding: 10px 15px;
-    width: 150px;
+    padding: 15px 15px;
+    width: 170px;
     font-size: 2rem;
-    margin: 15px;
   }
 }
 
