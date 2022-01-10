@@ -8,7 +8,7 @@ hamburger.addEventListener('click', () => {
     mobile_menu.classList.toggle('active');
     });
 
-document.addEventListener('scroll', () => {
+window.addEventListener('scroll', () => {
     var scroll_position =window.scrollY;
     if (scroll_position > 40) {
         header.style.backgroundColor = 'transparent'
