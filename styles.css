@@ -713,7 +713,7 @@ a {
 .about {
   flex-direction: column;
   max-width: 100vw;
-  padding: 80px 0px 0px;
+  padding: 60px 0px 0px;
 }
 .about-header {
   padding-bottom: 60px;
@@ -738,7 +738,7 @@ a {
   text-align: center;
   width: 360px;
 }
-.about-left-content > div {
+.about-left-content  {
   box-shadow: 0px 0px 18px -1px rgba(0, 0, 0, 0.39);
   -webkit-box-shadow: 0px 0px 18px -1px rgba(0, 0, 0, 0.39);
   -moz-box-shadow: 0px 0px 18px -1px rgba(0, 0, 0, 0.39);
@@ -847,9 +847,17 @@ a {
   font-weight: 600;
   padding-top: 10px;
 }
+.reg-no {
+  display: flex;
+  flex-direction: row;
+
+}
+.reg-no div {
+  padding: 0 5px 0;
+}
 .about-right h3 {
   font-weight: 500;
-  padding: 5px 0;
+  padding: 10px 0;
 }
 .about-right p {
   font-weight: 500;
@@ -904,7 +912,7 @@ a {
 
 #contacts{
   position: relative;
-  top:10vh;
+  
 }
 
 #contacts .contact {
@@ -914,6 +922,13 @@ a {
   max-width: 100%;
   margin: 0 auto;
   position: relative;
+}
+
+.contacts{
+  display: flex;
+  flex-direction:column ;
+  justify-content: center;
+  align-items: center;
 }
 .contacts:before,
 .contacts:after {
@@ -950,13 +965,13 @@ a {
   position: relative;
   display: flex;
   flex-direction: column;
-  margin: 30px;
+  margin: 10px;
   text-align: center;
   align-items: center;
   justify-content: center;
   height: 120px;
+  width: 220px;
   padding: 30px;
-  border-radius: 0px;
   box-shadow: 0px 0px 10px 0 #0000002c;
   transition: 0.4s ease all;
 }
@@ -968,6 +983,7 @@ a {
   border-radius: 0px;
   position: absolute;
   width: 100%;
+  
 }
 .contact-item .icon,
 .contact-item h2,
@@ -1016,15 +1032,9 @@ a {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 100px 0;
-}
-.contact-form {
-  /* border-radius: 0px;
-  box-shadow: 0px 5px 20px 0 #0000002c;
-  background-color: rgba(255, 255, 255, 0.3);
-  backdrop-filter: blur(10px) saturate(100%) contrast(45%) brightness(130%); */
-  width: 330px;
-  transition: all .8s;
+  margin: 60px 0;
+  width: 340px;
+  transition: all ease-in .8s;
 }
 .contact-form:hover {
   box-shadow: 0px 0px 10px 0 #0000002c;
@@ -1304,7 +1314,6 @@ form .submit:hover {
   #contacts {
     display: flex;
     flex-direction: column;
-    min-width: 20vh;
     align-items: center;
     justify-content: center;
     margin: 0;
@@ -1319,7 +1328,7 @@ form .submit:hover {
     margin-top: 50px;
   }
   .contacts .contact-item {
-    margin: auto 10px;
+    margin: auto 15px;
     min-width: 65%;
 
   }
