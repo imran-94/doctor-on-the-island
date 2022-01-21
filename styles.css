@@ -92,7 +92,10 @@ a {
   color: white;
   padding: 20px;
   display: block;
+  
+  
 }
+
 
 #header .nav-list ul li a::after {
   content: attr(data-after);
@@ -104,7 +107,7 @@ a {
   font-size: 13rem;
   letter-spacing: 50px;
   z-index: -1;
-  transition: 0.9s ease letter-spacing;
+  transition: 1.5s ease letter-spacing;
 }
 
 #header .nav-list ul li a:hover::after {
@@ -616,9 +619,10 @@ a {
   color: white;
 }
 
-/* end services */
+                    /* end services */
 
-/* education  */
+
+                    /* education  */
 
 #education .education {
   flex-direction: column;
@@ -678,7 +682,8 @@ a {
 
 #education .education-img {
   flex-basis: 50%;
-  height: 250px;
+  height: 100%;
+  width: 100%;
   overflow: hidden;
   position: relative;
 }
@@ -708,6 +713,7 @@ a {
 }
 
 /* end of education */
+
 
 /* about */
 .about {
