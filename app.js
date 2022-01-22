@@ -2,19 +2,16 @@ const hamburger = document.querySelector('.header .nav-bar .nav-list .hamburger'
 const mobile_menu = document.querySelector('.header .nav-bar .nav-list ul');
 const menu_item = document.querySelectorAll('.header .nav-bar .nav-list ul a');
 const header = document.querySelector('.header');
-
 hamburger.addEventListener('click', () => {
     hamburger.classList.toggle('active');
     mobile_menu.classList.toggle('active');
     });
 
 window.addEventListener('scroll', () => {
-    var scroll_position =window.scrollY;
-    if (scroll_position > 40) {
-        header.style.backgroundColor = 'transparent'
-    }   else {
-        header.style.backgroundColor = '#1d3444'
-    }
+    var scroll_position =window.scrollY > 30;
+    console.log(scroll_position)
+    header.classList.toggle('scrolling-active', scroll_position)
+   
 });
 
 menu_item.forEach((item) => {
