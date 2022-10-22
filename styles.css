@@ -207,7 +207,7 @@ a {
 }
 
 #header .section-title {
-  margin: 0;
+  margin-right: 0;
   font-size: 2.4rem;
   font-weight: 500;
   text-align: left;
@@ -995,12 +995,15 @@ a {
   align-items: center;
   margin: 60px 0;
   width: 340px;
-  transition: all ease-in .8s;
+  transition: all ease-in .5s;
+  box-shadow: 0px 0px 15px 0 #0000002c;
+    background-color: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(10px) saturate(100%) contrast(45%) brightness(130%)
 }
 .contact-form:hover {
-  box-shadow: 0px 0px 10px 0 #0000002c;
+  box-shadow: 0px 0px 5px 0 #0000002c;
   background-color: rgba(255, 255, 255, 0.3);
-  backdrop-filter: blur(10px) saturate(100%) contrast(45%) brightness(130%)
+  backdrop-filter: blur(10px) saturate(100%) contrast(45%) brightness(135%)
 }
 
 .form-control {
@@ -1023,18 +1026,18 @@ a {
 input {
   height: 45px;
   border-radius: 5px;
-  box-shadow: 0px 0px 10px 0 #0000002c;
+  box-shadow: 0px 0px 12px 0 #0000002c;
   
 }
 textarea {
   height: 100px;
   border-radius: 5px;
-  box-shadow: 0px 0px 10px 0 #0000002c;
+  box-shadow: 0px 0px 12px 0 #0000002c;
 }
 
 .contact-form input:hover,
 .contact-form textarea:hover {
-  box-shadow: 0px 0px 20px 0 #0000002c;
+  box-shadow: 0px 0px 25px 0 #0000002c;
 }
 
 form .submit {
@@ -1054,7 +1057,7 @@ form .submit:hover {
 }
 
 .contact-map iframe{
-  width: 98vw;
+  width: 98.5vw;
   
 }
 /* end of contact */
@@ -1359,12 +1362,13 @@ form .submit:hover {
 
   .contact-form {
     border-radius: 0px;
-    /* box-shadow: 0px 0px 30px 0 #0000002c; */
-    width: 1000px;
+    width: 680px;
   }
 
   .form-control {
     width: 600px;
+    padding: 30px;
+    margin: 20px;
   }
   /* about  */
   .about-footer {
