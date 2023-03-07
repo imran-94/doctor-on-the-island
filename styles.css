@@ -99,6 +99,8 @@ a {
   background-color: transparent;
   backdrop-filter: blur(10px) saturate(100%) contrast(45%) brightness(130%);
   box-shadow: 0  0 16px  rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow:0 0 16px rgba(0, 0, 0, 0.5);
+    -moz-box-shadow:0 0 16px rgba(0, 0, 0, 0.5);
 }
 #header .scrolling-active .nav-list ul li a:hover{
   color: #9EBAC3;
