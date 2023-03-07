@@ -571,7 +571,8 @@ background-image:  linear-gradient(120deg, #ffebe7 0%, #fbd5d8 50%);;
   display: flex;
   border-radius: 50%;
   border: 6px white solid;
-  width: min-content;
+  width: 90px;
+  height: 90px;
 }
 .doc-option span {
   color: #c29f9f;
