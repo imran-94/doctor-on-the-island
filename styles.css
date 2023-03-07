@@ -571,8 +571,8 @@ background-image:  linear-gradient(120deg, #ffebe7 0%, #fbd5d8 50%);;
 .doc-option-items div img{
   border-radius: 50%;
   border: 6px white solid;
-  width: 90px;
-  height: 90px;
+  width: 100px;
+  height: 100px;
 }
 .doc-option span {
   color: #c29f9f;
