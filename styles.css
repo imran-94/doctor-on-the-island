@@ -540,7 +540,7 @@ grid-template-columns: 1fr;
 position: relative;
 background-image:  linear-gradient(120deg, #ffebe7 0%, #fbd5d8 50%);;
 }
-.doc-option-items {
+.doc-option .doc-option-items {
   display:flex;
   flex-direction: row;
   border-radius: 50%;
@@ -555,6 +555,7 @@ background-image:  linear-gradient(120deg, #ffebe7 0%, #fbd5d8 50%);;
   height: 100px;
   width: 100px;
   border-radius: 50%;
+  overflow: hidden;
   border: 4px rgb(201, 108, 144)solid;
 }
 
@@ -1316,12 +1317,6 @@ background-image:  linear-gradient(120deg, #ffebe7 0%, #fbd5d8 50%);;
   border: 4px rgb(201, 108, 144)solid;
 }
 
-
-.doc-option-items div img{
-  display: flex;
-  border-radius: 50%;
-  border: 6px white solid;
-}
 
 
 .slide{
