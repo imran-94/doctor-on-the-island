@@ -546,6 +546,7 @@ background-image:  linear-gradient(120deg, #ffebe7 0%, #fbd5d8 50%);;
   border-radius: 50%;
   justify-content: space-evenly;
   height: 100px;
+    width: 100px;
   padding-top: 10px ;
   
 }
@@ -568,7 +569,6 @@ background-image:  linear-gradient(120deg, #ffebe7 0%, #fbd5d8 50%);;
   animation-delay: 1s;
 }
 .doc-option-items div img{
-  display: flex;
   border-radius: 50%;
   border: 6px white solid;
   width: 90px;
