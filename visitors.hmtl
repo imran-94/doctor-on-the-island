@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Visitors & Hotel Visits — Doctor On The Island</title>
+  <meta name="description" content="Doctor On The Island — hotel visits for tourists in Zanzibar. English-speaking doctors who come to your hotel. Book via WhatsApp or phone.">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="all.css">
+</head>
+<body>
+
+  <!-- header (same structure as your site) -->
+  <section id="header">
+    <div class="header container">
+      <div class="nav-bar">
+        <div class="brand">
+          <a href="index.html"><h1 class="section-title"><span>doctor</span> on the <span>island</span></h1></a>
+        </div>
+        <div class="nav-list">
+          <div class="hamburger"><div class="bar"></div></div>
+          <ul>
+            <li><a class="scroll" href="index.html" data-after="home">home</a></li>
+            <li><a class="scroll" href="services.html" data-after="services">services</a></li>
+            <li><a class="scroll" href="about.html" data-after="about">about</a></li>
+            <li><a class="scroll" href="fees.html" data-after="fees">fees</a></li>
+            <li><a class="scroll" href="contact.html" data-after="contact">contact</a></li>
+            <li><a class="scroll" href="visitors.html" data-after="visitors">for visitors</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- hero -->
+  <section id="hero">
+    <div class="hero container">
+      <div>
+        <div class="hero-img"></div>
+        <div class="hero-banner">
+          <h1>Hotel Visits & Medical Help <span>for Visitors in Zanzibar</span></h1>
+          <p>We bring English-speaking doctors to your hotel in Zanzibar — fast, private, and professional. Book a hotel visit by WhatsApp or phone and a clinician will arrive to examine, treat and provide prescriptions or referrals.</p>
+          <a href="https://wa.me/255774740474?text=Hi%20I%20need%20a%20hotel%20visit%20-%20Doctor%20On%20The%20Island" class="p-button" target="_blank" rel="noopener">Request Hotel Visit — $30</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- visitors content -->
+  <section id="visitors-content" class="container" style="padding:40px 20px;">
+    <div style="max-width:1000px;margin:0 auto;line-height:1.6;">
+      <h2 class="section-title"><span>visitors</span> & hotel <span>visits</span></h2>
+
+      <h3>Who this is for</h3>
+      <p>Tourists, expats and short-term visitors in Zanzibar who need medical attention at their hotel — from food poisoning and dehydration to minor injuries and medication refills.</p>
+
+      <h3>Common issues we treat</h3>
+      <ul>
+        <li>Food poisoning and stomach upsets</li>
+        <li>Dehydration and heat exhaustion</li>
+        <li>Minor wounds, cuts and sutures</li>
+        <li>Fever, coughs and respiratory symptoms</li>
+        <li>Prescription refills and travel medicine advice</li>
+      </ul>
+
+      <h3>How a hotel visit works</h3>
+      <ol>
+        <li><strong>Contact</strong> us via WhatsApp or call — provide hotel name, room number, and short symptoms.</li>
+        <li><strong>Confirm</strong> — we send an estimated arrival window and consultation fee.</li>
+        <li><strong>Visit</strong> — an English-speaking doctor visits the hotel, examines and treats.</li>
+        <li><strong>Payment</strong> — by M-Pesa, cash or card (card on request). We issue a receipt and prescription if needed.</li>
+      </ol>
+
+      <h3>Fees (sample)</h3>
+      <p>Consultation at hotel: <strong>USD 25–35</strong> (or TSh 60,000–85,000) inside Makunduchi/nearby. Prices confirmed on contact. Travel surcharge applies for remote locations.</p>
+
+      <h3>Book now (WhatsApp)</h3>
+      <p><a href="https://wa.me/255774740474?text=Hi%20I%20need%20a%20hotel%20visit%20-%20Doctor%20On%20The%20Island" target="_blank" rel="noopener">Chat on WhatsApp</a> or <a href="tel:+255774740474">Call +255 774 740 474</a></p>
+
+      <hr style="margin:24px 0;">
+
+      <h3>Meet our doctors</h3>
+      <div class="doctor" style="display:flex;flex-wrap:wrap;gap:20px;">
+        <div style="flex:1 1 300px;border-radius:8px;padding:16px;box-shadow:0 6px 18px rgba(0,0,0,0.06);">
+          <img src="images/dr-jane.jpg" alt="Dr Jane Doe" style="width:100%;height:180px;object-fit:cover;border-radius:6px;">
+          <h4>Dr Jane Doe, MBChB</h4>
+          <p>General practitioner — 8 years experience. English & Swahili. Travel medicine and acute care for visitors.</p>
+        </div>
+
+        <div style="flex:1 1 300px;border-radius:8px;padding:16px;box-shadow:0 6px 18px rgba(0,0,0,0.06);">
+          <img src="images/dr-khalid.jpg" alt="Dr Khalid" style="width:100%;height:180px;object-fit:cover;border-radius:6px;">
+          <h4>Dr Khalid, MBChB</h4>
+          <p>Emergency and acute care specialist. Experienced in wound care and dehydration management.</p>
+        </div>
+      </div>
+
+      <hr style="margin:24px 0;">
+
+      <h3>Short hotel-visit booking form</h3>
+      <form name="hotel-visit" method="POST" data-netlify="true" style="max-width:600px;">
+        <input type="hidden" name="form-name" value="hotel-visit">
+        <label style="display:block;margin-bottom:8px;">Full name
+          <input name="name" required style="width:100%;padding:10px;margin-top:6px;">
+        </label>
+        <label style="display:block;margin-bottom:8px;">Phone
+          <input name="phone" required style="width:100%;padding:10px;margin-top:6px;">
+        </label>
+        <label style="display:block;margin-bottom:8px;">Hotel name
+          <input name="hotel" required style="width:100%;padding:10px;margin-top:6px;">
+        </label>
+        <label style="display:block;margin-bottom:8px;">Room number (if known)
+          <input name="room" style="width:100%;padding:10px;margin-top:6px;">
+        </label>
+        <label style="display:block;margin-bottom:8px;">Symptoms / notes
+          <textarea name="message" required style="width:100%;padding:10px;margin-top:6px;"></textarea>
+        </label>
+        <button type="submit" class="p-button" style="padding:10px 16px;">Request Visit</button>
+        <input type="text" name="_honey" style="display:none">
+        <input type="hidden" name="_captcha" value="false">
+      </form>
+
+    </div>
+  </section>
+
+  <!-- footer (same as your site) -->
+  <section id="footer">
+    <div class="footer-container">
+      <h1 class="footer-header"><span>doctor</span> on the <span>island</span></h1>
+      <h2>your complete health solution</h2>
+      <div class="links">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="https://instagram.com/imran_iddi/" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+      </div>
+      <h3>copyright <span>&#169</span> 2021 all rights reserved</h3>
+      <h3>made by Imran Iddi</h3>
+    </div>
+  </section>
+
+  <!-- Floating contact buttons (paste this into every page or keep in footer/site-wide) -->
+  <style>
+    #float-contact { position: fixed; right: 16px; bottom: 18px; z-index:9999; display:flex; flex-direction:column; gap:10px; }
+    .float-btn { display:inline-flex; align-items:center; gap:8px; padding:12px 14px; border-radius:999px; box-shadow:0 6px 18px rgba(0,0,0,0.18); font-weight:600; text-decoration:none; color:#fff; font-family:inherit; }
+    .float-whatsapp { background:#25D366; }
+    .float-call { background:#0b71d1; }
+    @media (max-width:480px){ .float-btn { padding:10px 12px; font-size:14px; } }
+  </style>
+
+  <div id="float-contact" aria-hidden="false">
+    <a class="float-btn float-whatsapp" href="https://wa.me/255774740474?text=Hi%20I%20need%20a%20hotel%20visit%20-%20Doctor%20On%20The%20Island" target="_blank" rel="noopener noreferrer" aria-label="Chat on WhatsApp">WhatsApp</a>
+    <a class="float-btn float-call" href="tel:+255774740474" aria-label="Call now">Call Now</a>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
